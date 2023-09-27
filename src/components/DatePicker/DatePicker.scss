@@ -1,0 +1,127 @@
+$color-primary-60: #0f6d77;
+$color-neutral-5: #eef1f4;
+$color-neutral-60: #5a636d;
+$color-neutral-70: #444c54;
+
+.ant-picker-dropdown {
+  .ant-picker-panel-container {
+    .ant-picker-panel-layout {
+      .ant-picker-panel {
+        .ant-picker-header {
+          border-bottom: none;
+
+          .ant-picker-header-view {
+            button:hover {
+              color: $color-primary-60;
+            }
+          }
+
+          .ant-picker-header-super-next-btn,
+          .ant-picker-header-super-prev-btn {
+            display: none;
+          }
+        }
+
+        .ant-picker-body {
+          padding-top: 0;
+          padding-left: 8px;
+          padding-right: 8px;
+
+          .ant-picker-content {
+            width: 100%;
+
+            th {
+              color: $color-neutral-60;
+            }
+
+            .ant-picker-cell {
+              .ant-picker-cell-in-view {
+                color: $color-neutral-70;
+              }
+
+              &:hover {
+                .ant-picker-cell-inner {
+                  background-color: $color-neutral-5;
+                }
+              }
+
+              &.ant-picker-cell-today {
+                .ant-picker-cell-inner::before {
+                  border-color: $color-primary-60;
+                  border-radius: 50%;
+                }
+              }
+
+              &.ant-picker-cell-selected {
+                .ant-picker-cell-inner {
+                  background-color: $color-primary-60;
+                }
+              }
+            }
+          }
+        }
+
+        .ant-picker-date-panel {
+          .ant-picker-body {
+            .ant-picker-content {
+              .ant-picker-cell {
+                .ant-picker-cell-inner {
+                  width: 36px;
+                  height: 36px;
+                  font-size: 14px;
+                  line-height: 36px;
+                  border-radius: 50%;
+                }
+              }
+            }
+          }
+        }
+
+        .ant-picker-quarter-panel {
+          .ant-picker-body {
+            .ant-picker-content {
+              .ant-picker-cell {
+                .ant-picker-cell-inner {
+                  width: 68px;
+                  height: 56px;
+                  font-size: 14px;
+                  line-height: 56px;
+                }
+              }
+            }
+          }
+        }
+
+        .ant-picker-decade-panel,
+        .ant-picker-month-panel,
+        .ant-picker-year-panel {
+          .ant-picker-body {
+            .ant-picker-content {
+              .ant-picker-cell {
+                .ant-picker-cell-inner {
+                  width: 90px;
+                  height: 56px;
+                  font-size: 14px;
+                  line-height: 56px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-picker-label {
+  display: block;
+  color: $color-primary-60;
+  letter-spacing: -0.5%;
+}
+
+.ant-picker {
+  &:hover,
+  &.ant-picker-focused {
+    border-color: $color-primary-60;
+  }
+}

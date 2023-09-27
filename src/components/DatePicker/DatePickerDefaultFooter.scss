@@ -1,0 +1,32 @@
+$color-primary-50: #289194;
+$color-primary-60: #0f6d77;
+
+.ant-picker-dropdown {
+  .ant-picker-default-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    width: 100%;
+
+    .btn-today {
+      color: $color-primary-60;
+
+      &:hover {
+        color: $color-primary-50;
+      }
+    }
+
+    .ant-btn-primary {
+      border: none;
+
+      &:not(:disabled):not(.ant-btn-disabled) {
+        background-color: $color-primary-60;
+
+        &:hover {
+          background-color: $color-primary-50;
+        }
+      }
+    }
+  }
+}
